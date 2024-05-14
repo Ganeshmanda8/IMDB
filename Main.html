@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/profile_images/1674562292586012673/avGDzo8C_400x400.jpg">
+
+    <title>IMDB Home</title>
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />  <!-- search icon -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<ul class="head">
+    <li class="row"><a href="Main.html"><img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png"></a></li>
+    <li class="row"><a style="font-size: 15px;"><input type="text" id="search-bar" name="fname" placeholder="Search IMDb" size="75"></a></li>
+    <li class="row"><a><button onclick="searchMovie()" type="submit" class="nav-button"><i class="fa fa-search"></i></button></a></li>
+    <li class="row"><a href="#imdbpro"><img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb8sexstO8NbmDD8qAdiSi6uPFqTq1ksisoUQ7a3zd&s"></a></li>
+    <li class="row"><a href="#watchlist"><img class="img3" src="https://cdn.iconscout.com/icon/free/png-512/free-bookmark-5491338-4574442.png?f=webp&w=256"></a></li>
+    <li class="row"><a><button type="button" class="nav-button">SIGN IN</button></a></li>
+    <li class="row"><a><button type="button" class="nav-button">SIGN UP</button></a></li><br>
+</ul>
+
+<hr>
+<div class="wrapper"> 
+  <ul class="carousel"> 
+      <li class="card"><div class="top"><img class="weekimages" src= "https://m.media-amazon.com/images/M/MV5BZjQ0YjAyNWQtMjRjMC00NzMxLTlkNjEtYWQzNmQwNGRlMGJkXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg" alt="" draggable="false"><div class="cardtext"><h6>Fallout</h6><h6>Rating: 8.5/10</h6></div></div></li> 
+      <li class="card"><div class="top"><img class="weekimages" src= "https://m.media-amazon.com/images/M/MV5BZTJmZTI3YjEtODBlNy00ODY4LWFkODktNmZjNDI4YjllYzVjXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" alt="" draggable="false"><div class="cardtext"><h6>Ripley</h6><h6>Rating: 8.2/10</h6></div></div></li> 
+      <li class="card"><div class="top"><img class="weekimages" src= "https://m.media-amazon.com/images/M/MV5BMGFjOGQ3MWItYzcwNS00ZTYxLWE5MmYtOWVkMWE1NmM1MzM1XkEyXkFqcGdeQXVyMTY1MjAwNDU0._V1_.jpg" alt="" draggable="false"><div class="cardtext"><h6>Laapataa Ladies</h6><h6>Rating: 8.2/10</h6></div></div></li> 
+      <li class="card"><div class="top"><img class="weekimages" src= "https://m.media-amazon.com/images/M/MV5BYzlhNzBmYjUtNjRmZC00MDg3LWE4NDMtZDNjODUwNTljMzhlXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg" alt="" draggable="false"><div class="cardtext"><h6>Rebel Moon - Part Two: The Scargiver</h6><h6>Rating: 5.2/10</h6></div></div></li> 
+      <li class="card"><div class="top"><img class="weekimages" src= "https://m.media-amazon.com/images/M/MV5BMjNiMDI5YjItNmU0Yy00NmYxLThjYmUtZDc5ODY2ZDI2NzkyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="" draggable="false"><div class="cardtext"><h6>3 Body Problem</h6><h6>Rating: 7.6/10</h6></div></div></li> 
+      <li class="card"><div class="top"><img class="weekimages" src= "https://m.media-amazon.com/images/M/MV5BN2QyZGU4ZDctOWMzMy00NTc5LThlOGQtODhmNDI1NmY5YzAwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg" alt="" draggable="false"><div class="cardtext"><h6>Dune: Part Two</h6><h6>Rating: 8.7/10</h6></div></div></li> 
+      <li class="card"><div class="top"><img class="weekimages" src= "https://m.media-amazon.com/images/M/MV5BOGJjODQxYWUtYjlkOC00NzJiLTgyZjUtY2Q3Y2FhZGVlODEwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="" draggable="false"><div class="cardtext"><h6>The Gentlemen</h6><h6>Rating: 8.1/10</h6></div></div></li> 
+      <li class="card"><div class="top"><img class="weekimages" src= "https://m.media-amazon.com/images/M/MV5BNmNhNjFiZDgtOGE2My00MTg2LTlhMjctYjYzNmNiMTMwYmUxXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg" alt="" draggable="false"><div class="cardtext"><h6>Abigail</h6><h6>Rating: 7.1/10</h6></div></div></li>  
+  </ul> 
+</div> 
+
+<hr>
+<center><a href="index.html"><button class="last" type="button">Sign in for more Access</button></a></center>
+</body>
+</html>

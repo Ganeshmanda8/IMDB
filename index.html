@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB Media Screen</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/profile_images/1674562292586012673/avGDzo8C_400x400.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+
+<ul class="head">
+    <li class="row"><a href="index.html"><img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png"></a></li>
+    <li class="row"><a style="font-size: 15px;"><input type="text" id="search-bar" name="fname" placeholder="Search IMDb" size="75"></a></li>
+    <li class="row"><a><button onclick="searchMovie()" type="submit" class="nav-button"><i class="fa fa-search"></i></button></a></li>
+    <li class="row"><a href="#imdbpro"><img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb8sexstO8NbmDD8qAdiSi6uPFqTq1ksisoUQ7a3zd&s"></a></li>
+    <li class="row"><a href="#watchlist"><img class="img3" src="https://cdn.iconscout.com/icon/free/png-512/free-bookmark-5491338-4574442.png?f=webp&w=256"></a></li>
+    <li class="row"><a><button type="button" class="nav-button">SIGN IN</button></a></li>
+    <li class="row"><a><button type="button" class="nav-button">SIGN UP</button></a></li><br>
+</ul>
+
+<hr>
+<div id="movie-details"></div>
+
+<div id="hide">
+<hr style="border: hidden;">
+<p class="movies">Upcoming Movies</p><br>
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li><br>
+        <li data-target="#myCarousel" data-slide-to="1"></li><br>
+        <li data-target="#myCarousel" data-slide-to="2"></li><br>
+        <li data-target="#myCarousel" data-slide-to="3"></li><br>
+        <li data-target="#myCarousel" data-slide-to="4"></li><br>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+  
+        <div class="item active">
+          <img src="https://assets-prd.ignimgs.com/2023/12/03/dune-1701627712924.jpg" alt="Los Angeles" style="width:100%; height: 700px;">
+          <div class="carousel-caption">
+            <h3>DUNE 2</h3>
+            <h5>Sci-fi/Adventure</h5>
+          </div>
+        </div>
+  
+        <div class="item">
+          <img src="https://dx35vtwkllhj9.cloudfront.net/universalstudios/despicable-me-4/images/regions/us/share.jpg" alt="Chicago" style="width:100%;height: 700px;">
+          <div class="carousel-caption">
+            <h3>DESPICABLE ME 4</h3>
+            <h5>Family/Comedy</h5>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="https://images.indianexpress.com/2023/07/project-k.jpg" alt="New York" style="width:100%;height: 700px;">
+          <div class="carousel-caption">
+            <h3>KALKI 2898 - A.D</h3>
+            <h5>Sci-fi/Action</h5>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00369074-hqjbykymqz-landscape.jpg" alt="New York" style="width:100%;height: 700px;">
+          <div class="carousel-caption">
+            <h3>OG</h3>
+            <h5>Action/Thriller</h5>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="https://i.ytimg.com/vi/CU1cenQEPlI/maxresdefault.jpg" alt="New York" style="width:100%;height: 700px;">
+          <div class="carousel-caption">
+            <h3>Saripodhaa Sanivaaram</h3>
+            <h5>Action/Thriller</h5>
+          </div>
+        </div>
+        
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+<hr>
+
+<p class="movies">April Birthdays</p><br>
+<div class="scrolling-wrapper">
+  <div class="card1"><img src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/prabhu-deva-1050910-1695644494.jpg" style="height: 275px;width: 300px;"><center><h3>Prabhu Deva</h3></center></div>
+  <div class="card1"><img src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/ajay-devgn-24051-12-09-2017-04-41-13.jpg" style="height: 275px;width: 300px;"><center><h3>Ajay Devgn</h3></center></div>
+  <div class="card1"><img src="https://parade.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkxNDU0MDM0OTQ5ODQyNTMw/sadie-sink-chanel-event.jpg" style="height: 275px;width: 300px;"><center><h3>Sadie Sink</h3></center></div>
+  <div class="card1"><img src="https://wallpapers.com/images/featured/allu-arjun-pictures-38h3s2zkr9zd76xp.jpg" style="height: 275px;width: 300px;"><center><h3>Allu Arjun</h3></center></div>
+  <div class="card1"><img src="https://d1nslcd7m2225b.cloudfront.net/Pictures/1024x536/8/2/6/1243826_Phoebe-Fox.jpg" style="height: 275px;width: 300px;"><center><h3>Phoebe Fox</h3></center></div>
+  <div class="card1"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Jenna_Ortega_2022_%28cropped%29.jpg" style="height: 275px;width: 300px;"><center><h3>Jenna Ortega</h3></center></div>
+  <div class="card1"><img src="https://cdn.britannica.com/29/215029-050-84AA8F39/British-actress-Emma-Watson-2017.jpg" style="height: 275px;width: 300px;"><center><h3>Emma Watson</h3></center></div>
+  <div class="card1"><img src="https://i.pinimg.com/564x/04/16/cd/0416cd80d41e2cf2178c51a42d9e8721.jpg" style="height: 275px;width: 300px;"><center><h3>Akhil Akkineni</h3></center></div>
+  <div class="card1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR22OqziqUJDX2e5omic3oKdtK5daSnWq0ZGlHQvfy2cJTTWkg3AMeAeZJUBeAvgF867as&usqp=CAU" style="height: 275px;width: 300px;"><center><h3>Ram Gopal Varma</h3></center></div>
+</div>
+
+<p class="movies">In Theatres</p>
+<h4 style="opacity: 0.5;color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sometimes near you</h4>
+<div class="scrolling-wrapper">
+  <div class="card2"><img src="https://m.media-amazon.com/images/M/MV5BYjMyODk0MzktNGM0Ni00ZGNlLTg0YjEtNGYzZTExOTRmYmE5XkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg" style="height: 300px;width: 200px;"><center><br><h5><span class="fa fa-star checked fa-2x">&nbsp;6.9</span></h5><br><h3>Tillu Square</h3></center></div>
+  <div class="card2"><img src="https://m.media-amazon.com/images/M/MV5BMTQwZjRiMjUtYmU0OS00Y2EwLWJhZTctOWI1ZGU2NWExM2FkXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg" style="height: 300px;width: 200px;"><center><br><h5><span class="fa fa-star checked fa-2x">&nbsp;8.6</span></h5><br><h3>Manjummel Boys</h3></center></div>
+  <div class="card2"><img src="https://m.media-amazon.com/images/M/MV5BNmY4NTlkNTEtNDBjMS00ZTJiLWFlZDMtNWY0MWFlZmNjMTFlXkEyXkFqcGdeQXVyMzQxODQzMTE@._V1_.jpg" style="height: 300px;width: 200px;"><center><br><h5><span class="fa fa-star checked fa-2x">&nbsp;6.4</span></h5><br><h3>Nefarious</h3></center></div>
+  <div class="card2"><img src="https://m.media-amazon.com/images/M/MV5BNzczMWUwNzAtZGIyMy00MDllLThjZTUtYjk2NzRiNjdiMzE5XkEyXkFqcGdeQXVyMTYzMTU3Njgx._V1_.jpg" style="height: 300px;width: 200px;"><center><br><h5><span class="fa fa-star checked fa-2x">&nbsp;8.5</span></h5><br><h3>Maidaan</h3></center></div>
+  <div class="card2"><img src="https://m.media-amazon.com/images/M/MV5BNWI0ZWM2N2UtNTQwOC00Y2VjLWJiMjktZjc4ZGIwMTg0NjQyXkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_.jpg" style="height: 300px;width: 200px;"><center><br><h5><span class="fa fa-star checked fa-2x">&nbsp;7.1</span></h5><br><h3>Malayalee from India</h3></center></div>
+  <div class="card2"><img src="https://m.media-amazon.com/images/M/MV5BNDQ2MGFjZmQtYjE1ZC00OTJkLTk5YTItMDVjNGVmNWJmNmMyXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg" style="height: 300px;width: 200px;"><center><br><h5><span class="fa fa-star checked fa-2x">&nbsp;9.4</span></h5><br><h3>Exhuma</h3></center></div>
+  <div class="card2"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-250,h-390/et00395620-lbghpyvubx-portrait.jpg" style="height: 300px;width: 200px;"><center><br><h5><span class="fa fa-star checked fa-2x">&nbsp;9.4</span></h5><br><h3>The Indian Story</h3></center></div>
+  <div class="card2"><img src="https://m.media-amazon.com/images/M/MV5BZGYzYjQ3ZWItMGJlZC00YzAxLTgzMTItYzI5MjY2YjA4Mjk5XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UX200_CR0,0,200,200_AL_.jpg" style="height: 300px;width: 200px;"><center><br><h5><span class="fa fa-star checked fa-2x">&nbsp;5.0</span></h5><br><h3>Tarot</h3></center></div>
+  <div class="card2"><img src="https://m.media-amazon.com/images/M/MV5BMGNhNTYwNjMtYjFkOC00MWQzLTgyNTMtMmIxNWU2MWUyMDQ5XkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_.jpg" style="height: 300px;width: 200px;"><center><br><h5><span class="fa fa-star checked fa-2x">&nbsp;6.9</span></h5><br><h3>Crew</h3></center></div>
+  <div class="card2"><img src="https://m.media-amazon.com/images/M/MV5BZDY0YzI0OTctYjVhYy00MTVhLWE0NTgtYTRmYTBmOTE3YTViXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg" style="height: 300px;width: 200px;"><center><br><h5><span class="fa fa-star checked fa-2x">&nbsp;6.3</span></h5><br><h3>kung fu panda 4</h3></center></div>
+  <div class="card2"><img src="https://m.media-amazon.com/images/M/MV5BYTA0YTgxNWUtYjllOS00MWNhLTk3MTQtYjQ1N2RmNTZjYzI2XkEyXkFqcGdeQXVyMTQ3Mzk2MDg4._V1_FMjpg_UX1000_.jpg" style="height: 300px;width: 200px;"><center><br><h5><span class="fa fa-star checked fa-2x">&nbsp;8.2</span></h5><br><h3>Aavesham</h3></center></div>
+  <div class="card2"><img src="https://m.media-amazon.com/images/M/MV5BOGMwZTYwYmMtODhmYi00OGU0LWFiNjctN2Y2MzBlNmY0MjU1XkEyXkFqcGdeQXVyMTUyNjIwMDEw._V1_FMjpg_UX1000_.jpg" style="height: 300px;width: 200px;"><center><br><h5><span class="fa fa-star checked fa-2x">&nbsp;9.3</span></h5><br><h3>Prasanna Vadanam</h3></center></div>
+  <div class="card2"><img src="https://picsxtra.com/images/2024/05/03/Aa-Okkati-Adakku-TBL.png" style="height: 300px;width: 200px;"><center><br><h5><span class="fa fa-star checked fa-2x">&nbsp;8.1</span></h5><br><h3>Aa Okkati Adakku</h3></center></div>
+  <div class="card2"><img src="https://m.media-amazon.com/images/M/MV5BMzI0NmVkMjEtYmY4MS00ZDMxLTlkZmEtMzU4MDQxYTMzMjU2XkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_.jpg" style="height: 300px;width: 200px;"><center><br><h5><span class="fa fa-star checked fa-2x">&nbsp;8.6</span></h5><br><h3>Spiderman across the Spider Verse</h3></center></div>
+</div>
+
+<hr>
+<center><button class="last" type="button">Sign in for more Access</button></center>
+</body>
+</html>
